@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Note Panel</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="topic-selector">
+        <select id="topicSelect"></select>
+        <button id="newTopicBtn" class="icon-btn" title="New topic">+</button>
+        <button id="importBtn" class="icon-btn" title="Import markdown">↑</button>
+      </div>
+      <input type="text" id="topicInput" placeholder="Topic title...">
+      <input type="file" id="fileInput" accept=".md,.txt" style="display: none;">
+    </header>
+    
+    <main>
+      <div class="editor-header">
+        <button id="toggleModeBtn" class="mode-btn">Preview</button>
+      </div>
+      <div id="editor" contenteditable="true" placeholder="Start taking notes..."></div>
+      <div id="preview" style="display: none;"></div>
+    </main>
+    
+    <footer>
+      <button id="exportBtn">Export</button>
+      <button id="deleteBtn">Delete</button>
+      <button id="clearBtn">Clear</button>
+    </footer>
+  </div>
+  
+  <script src="marked.min.js"></script>
+  <script src="sidepanel.js"></script>
+</body>
+</html>
