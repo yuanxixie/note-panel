@@ -7,15 +7,9 @@ A minimal Chrome side panel extension for taking notes while browsing any webpag
 ## Features
 
 - **Side Panel**: Notes live in a side panel that stays open as you browse
-- **Right-Click to Add**: Select any text on a webpage, right-click, and add it to your notes
-- **Format Preservation**: Keeps line breaks, bullet points, and basic formatting
 - **Multi-Topic Support**: Create and manage multiple note topics
-- **Smart Scrolling**: Automatically scrolls to where content is inserted
 - **Markdown Preview**: Toggle between edit and preview modes
 - **Import/Export**: Import existing markdown files, export notes as `.md`
-- **Persistent Storage**: Notes are saved locally and persist across browser sessions
-- **Clean Paste**: Strips styling when pasting, keeping only structure
-- **Undo Support**: Full Cmd+Z / Ctrl+Z support
 
 ## Installation
 

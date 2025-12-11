@@ -472,7 +472,7 @@ exportBtn.addEventListener('click', () => {
   
   const a = document.createElement('a');
   a.href = url;
-  a.download = `${title.toLowerCase().replace(/\s+/g, '-')}.md`;
+  a.download = `${title.replace(/\s+/g, '-')}.md`;
   a.click();
   
   URL.revokeObjectURL(url);
